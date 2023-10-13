@@ -1,0 +1,744 @@
+@charset "UTF-8";
+
+/*======== 상단 타이틀 시작========*/
+.Ere_prod_topwrap {
+    width: 1060px;
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+    height: 120px;
+    background-color: rgb(253, 223, 228);
+}
+
+.Ere-prod_titlewrap {
+    margin: 0;
+    padding: 0;
+    line-height: 1.4;
+    position: relative;
+}
+
+.Ere-prod_titlewrap .left {
+    width: 1000px;
+    float: left;
+    text-align: left;
+}
+
+.Ere_prod_titlewrap .left .tlist ul {
+    margin: 0;
+    padding: 0;
+}
+
+.Ere_prod_titlewrap .left .tlist li {
+    list-style: none;
+    padding-bottom: 12px;
+}
+
+.Ere_label_wrap span {
+    display: inline-block;
+    background: #ffffff;
+    border-radius: 3px;
+    padding: 0 8px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    font-size: 11px;
+    color: #555;
+    margin-right: 5px;
+    letter-spacing: -0.04em;
+    font-family: 'Noto Sans KR', sans-serif;
+    border: 1px solid #e5e5e5;
+}
+
+.Ere_bo_title {
+    font-size: 26px;
+    font-family:  'Noto Sans KR', sans-serif;
+    color: #222;
+    text-decoration: none;
+    line-height: 60px;
+    letter-spacing: -0.05em;
+    font-weight: 500;
+}
+
+.Ere_sub1_title {
+    font-size: 15px;
+    font-family:  'Noto Sans KR', sans-serif;
+    color: #222;
+    text-decoration: none;
+    line-height: 1.4;
+    letter-spacing: -0.02em;
+}
+
+.Ere_sub2_title span {
+    font-size: 14px;
+    font-family:  'Noto Sans KR', sans-serif;
+    color: #444;
+    margin: 10px 7px 0 0; 
+}
+
+/*우측 공유하기 버튼*/
+.Ere_prod_topwrap .right {
+    width: 60px;
+    float: right;
+    text-align: right;
+    padding-top: 10px;
+}
+
+/*라인*/
+.Ere_line1 {
+    margin: 0;
+    padding: 0;
+    border-top: 1px solid #ccc;
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+}
+
+/*여백*/
+.Ere_sapce30 {
+    margin: 0;
+    padding: 0;
+    height: 30px;
+}
+/*======== 상단 타이틀 끝========*/
+
+
+/*======== 도서 커버 및 서지정보 시작========*/
+/*도서커버*/
+.Ere_prod_bookwrap {
+    width: 1060px;
+    height: 900px;
+    background-color: gold;
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+}
+
+/*좌 상단 배너*/
+.Ere_topleft_bn {
+    position: absolute;
+    left: -130px;
+    top: 30px;
+}
+
+/*회전하는 도서*/
+.gd_3dGrp {
+    cursor: url(../img/3d_cursor.svg ), pointer !important;
+    position: relative;
+    transform-style: preserve-3d;
+    perspective: 1800px;
+    user-select: none;
+    float: left;
+    margin: 40px 0 30px 0;;
+}
+.gd_3dGrp .gd_img {
+    position: relative;
+    width: 500px;
+    height: 720px;
+    box-shadow: 5px 12px 10px rgba(0, 0, 0, 0.15);
+    margin-bottom: 0;
+    transform-style: preserve-3d;
+    transition: 0.5s;
+}
+.gd_3dGrp .gd_img::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 58px;
+    height: 720px;
+    transform-origin: left;
+    background: url(../img/book_side.jpg);
+    background-position: center;
+    transform: rotateY(-90deg) translateX(-57px);
+    background-size: cover;
+}
+.gd_3dGrp .gd_img::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0px;
+    width: 100%;
+    height: 720px;
+    transform-origin: center;
+    background: url(../img/book_back.jpg);
+    background-position: center;
+    transform: rotateY(180deg) translateZ(56px);
+    background-size: cover;
+}
+.gd_3dGrp .gd_img img {
+    width: 100%;
+}
+
+/*하단 미리보기 아이콘*/
+.prev_box {
+    margin: 0px auto;
+    padding: 0;
+    width: 500px;
+    text-align: center;
+    font-family:  'Noto Sans KR', sans-serif;
+    font-size: 13px;
+}
+
+/*서지정보*/
+.info_list {
+    font-size: 15px;
+}
+
+.Ere_prod_Binfowrap {
+    margin: 0 0 0 60px;
+    padding: 0;
+    float: left;
+    width: 500px;
+    height: 763px;
+}
+
+.Ere_prod_Binfowrap .info {
+    margin: 0;
+    padding: 5px 0 0 0;
+    float: left;
+    font-family:  'Noto Sans KR', sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.Ere_prod_Binfowrap .info span {
+    color: #f03c97;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.Ere_prod_Binfowrap .Ere_sapce30 {
+    margin: 0;
+    padding: 0;
+    height: 60px;
+}
+
+/*상품정보*/
+.Ere_prod_Binfowrap .info_list {
+    clear: both;
+    padding: 0;
+    margin: 0 0 10px 0;
+}
+
+.Ere_prod_Binfowrap .info_list ul {
+    padding: 0;
+    margin: 1px 0 0 0;
+
+}
+
+.Ere_prod_Binfowrap .info_list ul li {
+    list-style: none;
+    position: relative;
+    padding: 0 0 3px 0;
+    margin: 10px  0 0 0;
+    font-size: 15px;
+}
+
+.Ere_prod_Binfowrap .info_list ul li .Litem {
+    position: absolute;
+    left: 0;
+    width: 100px;
+}
+
+.Ere_prod_Binfowrap .info_list ul li .Ritem {
+    margin-left: 100px;
+    width: 400px;
+    padding-bottom: 3px;
+}
+
+.Ere_prod_Binfowrap .info_list ul li .Litem_P {
+    position: absolute;
+    left: 0;
+    width: 100px;
+    top: 3px
+}
+
+.Ere_prod_Binfowrap .info_list ul li .Ritem {
+    margin-left: 100px;
+    width: 400px;
+    padding-bottom: 3px;
+}
+
+.Ere_fs24 {
+    font-size: 24px;
+}
+
+/*배송정보*/
+.ytz_delivery {
+    display: inline-block;
+    background-color: #ffab00;
+    text-align: center;
+    font-size: 13px;
+    line-height: 1.4em;
+    color: #fff;
+    border-radius: 15px;
+    padding: 1px 7px 2px 7px;
+    font-weight: 500;
+    margin-bottom: 3px;
+}
+.ytz_txt {
+    font-weight: 600;
+}
+
+.Ere_prod_Binfowrap .info_list ul li .Ritem a {
+    font-size: 13px;
+    text-decoration: underline;
+}
+
+.ytz_sapce {
+    position: absolute;
+    top: 0px;
+    background-color: gold;
+}
+
+/*랭킹 정보*/
+.Ere_ht18 {
+    line-height: 1.8;
+}
+
+.Ere_ht15 {
+    line-height: 15px;
+}
+
+.Ere_space10 {
+    padding: 7px; 
+}
+
+#wa-product_top1_Ranking {
+    float: left;
+}
+
+.Ere_ht18 img {
+    margin: 10px 0 0 0;
+}
+
+.text_blue {
+    text-decoration: none;
+    outline: 0;
+    color: #fff!important;
+    font-size: 13px;
+    font-weight: bold;
+    font-family:  'Noto Sans KR', sans-serif;
+    line-height: 1.5;
+    white-space: nowrap;
+    margin: 0;
+    padding: 1px 7px 4px 7px;
+    letter-spacing: -0.02em;
+    background: #0fa8ff;
+}
+
+.info_list2 {
+    clear: both;
+    padding: 0;
+    margin: 0 0 25px 0;
+    font-size: 15px;
+    background-color: gainsboro;
+}
+
+.Ere_prod_Binfowrap .info_list2 ul {
+    padding: 0;
+    margin: 0;
+}
+
+.Ere_prod_Binfowrap .info_list2 ul li {
+    list-style: none;
+    padding: 0 28px 0 0;
+    margin: 0;
+    float: left;
+    letter-spacing: -0.06em;
+}
+
+/* 장바구니 수량 섹션 */
+.Binfowrap .info_list ul li {
+    list-style: none;
+    position: relative;
+    padding: 0 0 3px 0;
+    margin: 0;
+}
+
+.input_box {
+    float: left;
+    border: 1px solid #cdcdcd;
+    margin: 0;
+    padding: 0;
+    width: 91px;
+    height: 45px;
+}
+
+.form_input {
+    border: 0;
+    padding: 11px 5px 11px 5px;
+    font-family:  'Noto Sans KR', sans-serif;
+    font-size: 16px;
+    margin: 0px;
+    color: #222;
+    width: 56px;
+    float: left;
+}
+
+.form_arrow {
+    float: right;
+    text-align: center;
+    border: 0;
+    padding: 1px 0;
+    width: 23px;
+    background: #f8f8f8;
+    border-left: 1px solid #cdcdcd;
+    font-size: 0;
+    height: 43px;
+}
+
+.form_arrow img {
+    width: 23px;
+    height: 21px;
+    text-align: right;
+
+}
+
+.Ere_sub_pink {
+    color: #eb247c;
+    text-decoration: none;
+    line-height: 1.5;
+}
+
+/*장바구니담기.바로구매 등 아이콘 박스*/
+.Ere_btn_cart {
+    width: 150px;
+    height: 26px;
+    margin: 0 5px 0 0;
+}
+
+.Ere_btn_cart a{
+    outline: 0;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    font-family:  'Noto Sans KR', sans-serif;
+    line-height: 1.5;
+    display: block;
+    white-space: nowrap;
+    background-color: #df307f;
+    margin: 0;
+    padding: 17px 30px 17px 27px;
+    text-align: center;
+}
+
+.Ere_btn_buyitnow {
+    width: 150px;
+    height: 26px;
+    margin: 0 5px 0 0;
+}
+
+.Ere_btn_buyitnow a{
+    outline: 0;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    font-family:  'Noto Sans KR', sans-serif;
+    line-height: 1.5;
+    display: block;
+    white-space: nowrap;
+    background-color: #e24457;
+    margin: 0;
+    padding: 17px 30px 17px 27px;
+    text-align: center;
+    text-align: center;
+}
+
+.Ere_btn_present {
+    width: 88px;
+    height: 54px;
+    border: 1px solid #df307f;
+    background-color: #fff;
+    margin: 0 5px 0 0 ;
+}
+
+.Ere_btn_present a {
+    outline: 0;
+    color: #df307f;
+    font-size: 15px;
+    font-weight: bold;
+    font-family:  'Noto Sans KR', sans-serif;
+    line-height: 1.5;
+    display: block;
+    white-space: nowrap;
+    margin: 0;
+    padding: 16px 14px 16px 14px;
+    text-align: center;
+}
+
+.Ere_btn_savebasket {
+    width: 88px;
+    height: 54px;
+    border: 1px solid #df307f;
+    background-color: #fff;
+}
+
+.Ere_btn_savebasket a {
+    outline: 0;
+    color: #df307f;
+    font-size: 15px;
+    font-weight: bold;
+    font-family:  'Noto Sans KR', sans-serif;
+    line-height: 1.5;
+    display: block;
+    white-space: nowrap;
+    margin: 0;
+    padding: 16px 14px 16px 14px;
+    text-align: center;
+}
+
+.info_list3 {
+    clear: both;
+    padding: 0;
+    margin: 0 0 25px 0;
+    font-size: 15px;
+}
+
+.info_more {
+    float: right;
+    padding: 0;
+    margin: 0;
+    text-align: right;
+    width: 50px;
+    margin: -35px 10px 0 0;
+}
+
+
+/*중간 하프 배너*/
+.Ere_pred_halfbannerwrap {
+    width: 1060px;
+    height: 115px;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+}
+
+.Ere_pred_halfbannerwrap .bn_left {
+    background: #eeeeee;
+    float: left;
+    width: 529px;
+    margin: 0;
+    padding: 0 20px;
+}
+
+.Ere_pred_halfbannerwrap .bn_left img {
+    width: 100%;
+}
+
+.Ere_pred_halfbannerwrap .bn_right {
+    background: #d1f2f9;
+    float: right;
+    width: 529px;
+    margin: 0;
+    padding: 0 20px;
+}
+
+
+.Ere_pred_halfbannerwrap .bn_right img {
+    width: 100%;
+}
+
+/*======== 상품 정보 및 주제 분류 시작 ========*/
+/* 기본정보 */
+.Ere_prod_middlewrap {
+    width: 1060px;
+    height: 4500px;
+    margin: 0 auto;
+    padding: 0;
+    background-color: rgb(171, 236, 228);
+}
+
+.Ere_prod_mconts_box {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    text-align: left;
+    width: 1060px;
+    height: 210px;
+}
+
+.mconts_LL {
+    display: block;
+    position: absolute;
+    left: 0;
+    margin: 0;
+    padding: 5px 100px 0 0;
+    width: 250px;
+    font-family:  'Noto Sans KR', sans-serif;
+    color: #222;
+    font-size: 21px;
+    line-height: 1.4;
+    letter-spacing: -0.02em;
+    text-align: left;
+    background-color: #df307f;
+}
+
+.mconts_LS {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0px 0 0 0;
+    font-family:  'Noto Sans KR', sans-serif;
+    color: #222;
+    font-size: 21px;
+    line-height: 1.5;
+    text-align: left;
+    letter-spacing: -0.02em;
+}
+
+.mconts_R {
+    width: 810px;
+    float: left;
+    margin: 0 0 0 250px;
+    padding: 5px 0 0 0;
+    font-family:  'Noto Sans KR', sans-serif;
+    color: #333;
+    font-size: 15px;
+    line-height: 1.8;
+    letter-spacing: -0.02em;
+    text-align: left;
+}
+
+.mconts_R .conts_info_list1 {
+    clear: both;
+    padding: 0;
+    margin: 0;
+}
+
+.mconts_R .conts_info_list1 ul {
+    padding: 0;
+    margin: 0;
+}
+
+.mconts_R .conts_info_list1 ul li {
+    list-style: none;
+    padding: 0 25px 0 0 ;
+    margin: 0;
+    float: left;
+    color: #333;
+}
+
+.Ere_sapce30 {
+    margin: 0;
+    padding: 0;
+    height: 30px;
+
+}
+
+.mconts_R .conts_Tleft {
+    float: left;
+    clear: both;
+    padding: 0;
+    margin: 0;
+}
+
+.Ere_fs16 {
+    font-size: 16px;
+}
+
+.Ere_PB10 {
+    padding-bottom: 10px;
+}
+
+.Ere_btn_check {
+    display: inline-block;
+    padding: 0;
+    vertical-align: middle;
+    text-align: center;
+    overflow: hidden;
+    text-decoration: none;
+    cursor: pointer;
+    background: #ffffff;
+    border: 1px solid #c8c8c8;
+}
+
+.Ere_btn_check a {
+    text-decoration: none;
+    outline: 0;
+    color: #555;
+    font-size: 13px;
+    font-weight: bold;
+    font-family:  'Noto Sans KR', sans-serif;
+    line-height: 1.5;
+    display: block;
+    white-space: nowrap;
+    margin: 0;
+    padding: 1px 7px 4px 7px;
+    letter-spacing: -0.02em;
+}
+
+.mconts_R .conts_info_list2 {
+    clear: both;
+    padding: 0;
+    margin: 0;
+}
+
+.mconts_R .conts_info_list2 ul {
+    padding: 0;
+    margin: 0;
+}
+
+.mconts_R .conts_info_list2 ul li {
+    list-style: none;
+    background: url(../img/icon_dot1.png) no-repeat 0 9px;
+    margin: 0;
+    padding: 0 0 6px 10px;
+    color: #333;
+    letter-spacing: -0.02em;
+}
+
+.Ere_line2 {
+    margin: 111px 0 40px 0;
+    padding: 0;
+    border-bottom: 1px solid #d5d5d5;
+}
+
+/*이벤트*/
+.mconts_R .conts_info_list6 {
+    clear: both;
+    padding: 0;
+    margin: 0;
+}
+
+.mconts_R .conts_info_list6 ul {
+    margin: -45px 0 0 0;
+    padding: 0;
+}
+
+.mconts_R .conts_info_list6 ul li {
+    list-style: none;
+    padding: 0 6px 0 0;
+    width: 266px;
+    text-align: left;
+    margin: 0;
+    float: left;
+    margin: 0 4px 0 0;
+}
+
+.mconts_R .event_tit {
+    margin: 0;
+    padding: 5px;
+    text-align: left;
+    color: #333;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.mconts_R .conts_info_list6 ul li img {
+    width: 266px;
+}
+
+.Ere_line3 {
+    margin: 70px 0 0 0;
+    padding: 0;
+    border-bottom: 1px solid #d5d5d5;
+}
+
+/*책소개*/
+#textBox {
+    width: 800px;
+    height: 400px;
+    background-color: gray;
+}
